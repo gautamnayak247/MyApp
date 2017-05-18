@@ -1,0 +1,96 @@
+﻿
+@{
+    ViewBag.Title = "AddPeople";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/service/commonReferenceDataService.js"></script>
+<script src="~/Scripts/controller/referenceDataManagePeopleController.js"></script>
+<script src="~/Scripts/controller/addPeopleController.js"></script>
+<h2>Reference Data</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card" ng-controller="referenceDataManagePeopleController">
+                <div class="card-block">
+                    <h4 class="card-title">Manage People</h4>
+                    <p class="card-text">Please select an operation.</p>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addPeople">
+                        <span class="glyphicon glyphicon-plus"></span> Add
+                    </button>
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editPeopleModal" ng-click="GetDeletePeopleView()">
+                        <span class="glyphicon glyphicon-eye-open"></span> Edit
+                    </button>
+                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deletePeopleModal">
+                        <span class="glyphicon glyphicon-remove"></span> Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-block">
+                    <h4 class="card-title">Manage DU</h4>
+                    <p class="card-text">Add the user to the database.</p>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addPeople">
+                        <span class="glyphicon glyphicon-plus"></span> Add
+                    </button>
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addPeople">
+                        <span class="glyphicon glyphicon-eye-open"></span> View
+                    </button>
+                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#addPeople">
+                        <span class="glyphicon glyphicon-remove"></span> Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-block">
+                    <h4 class="card-title">Add Project</h4>
+                    <p class="card-text">Add the user to the database.</p>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addPeople">
+                        <span class="glyphicon glyphicon-plus"></span> Add
+                    </button>
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addPeople">
+                        <span class="glyphicon glyphicon-eye-open"></span> View
+                    </button>
+                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#addPeople">
+                        <span class="glyphicon glyphicon-remove"></span> Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add People Modal starts here -->
+    <div id="addPeople" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            @{
+                Html.RenderPartial("AddPeople");
+            }
+        </div>
+    </div>
+    <!-- Add People Modal ends here -->
+    <!-- Edit People Modal Starts here-->
+    <div id="editPeopleModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content starts here-->
+            @{
+                Html.RenderPartial("EditPeople");
+            }
+            <!-- Modal content ends here-->
+        </div>
+    </div>
+    <!-- Edit People Modal Ends here-->
+    <!-- Delete People Modal Starts here-->
+    <div id="deletePeopleModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            @{
+                Html.RenderPartial("DeletePeople");
+            }
+
+        </div>
+    </div>
+    <!-- Delete People Modal Ends here-->
+</div>

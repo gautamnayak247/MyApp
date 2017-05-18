@@ -1,0 +1,5 @@
+C:\HRL Connect\HRL Connect\HRLConnect.CoreObjects\bin\Debug\HRLConnect.CoreObjects.dll
+C:\HRL Connect\HRL Connect\HRLConnect.CoreObjects\bin\Debug\HRLConnect.CoreObjects.pdb
+C:\HRL Connect\HRL Connect\HRLConnect.CoreObjects\obj\Debug\HRLConnect.CoreObjects.dll
+C:\HRL Connect\HRL Connect\HRLConnect.CoreObjects\obj\Debug\HRLConnect.CoreObjects.pdb
+C:\HRL Connect\HRL Connect\HRLConnect.CoreObjects\obj\Debug\HRLConnect.CoreObjects.csprojResolveAssemblyReference.cache

@@ -1,0 +1,1 @@
+﻿var hrlConnectApp = angular.module("HrlConnectModule", ['angucomplete-alt']);

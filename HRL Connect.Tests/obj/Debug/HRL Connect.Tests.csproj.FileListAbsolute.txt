@@ -1,0 +1,68 @@
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\roslyn\csc.exe
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\roslyn\vbc.exe
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\roslyn\VBCSCompiler.exe
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\HRL Connect.Tests.dll.config
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\HRL Connect.Tests.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\HRL Connect.Tests.pdb
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\HRL Connect.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\System.Web.Helpers.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\System.Web.Mvc.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\System.Web.Razor.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\System.Web.WebPages.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.Owin.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\System.Web.Optimization.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.Owin.Security.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Owin.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.Practices.Unity.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\HRLConnect.CoreObjects.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\HRLConnect.BL.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\EntityFramework.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\HRLConnect.DAL.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Unity.Mvc5.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\HRL Connect.pdb
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\System.Web.Helpers.xml
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\System.Web.Mvc.xml
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\System.Web.Razor.xml
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\System.Web.WebPages.xml
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.Owin.xml
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\System.Web.Optimization.xml
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.Owin.Security.xml
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.Practices.Unity.xml
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\HRLConnect.CoreObjects.pdb
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\HRLConnect.BL.pdb
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\EntityFramework.xml
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\HRLConnect.DAL.pdb
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\obj\Debug\HRL Connect.Tests.csprojResolveAssemblyReference.cache
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\obj\Debug\HRL Connect.Tests.dll
+C:\HRL Connect\HRL Connect\HRL Connect.Tests\obj\Debug\HRL Connect.Tests.pdb

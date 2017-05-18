@@ -1,0 +1,122 @@
+﻿
+<div class="modal-content" ng-controller="addPeopleController">
+    <form name="frmAddPeople" method="post" class="form-horizontal" novalidate>
+        <div class="modal-header">
+            <div class="alert alert-success alert-dismissable fade in" ng-show="successMessage">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close" ng-click="ResetAddPeopleForm(people)">&times;</a>
+                <strong>Success!</strong> The user has been added successfully.
+            </div>
+            <div class="alert alert-danger alert-dismissable fade in" ng-hide="errorMessage">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Error!</strong> An error has been occured.
+            </div>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Add People</h4>
+        </div>
+        <div class="modal-body">
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="txtEnterpriseId">Enterprise Id:</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="txtEnterpriseId" name="txtPeopleEnterpriseId" placeholder="Enter Enterprise Id" ng-model="people.EnterpriseId" ng-maxlength="100" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-2" for="txtName">Name:</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="txtName" name="txtPeopleName" placeholder="Enter Name" ng-model="people.Name" ng-maxlength="200" ng-pattern="/^[a-zA-Z\s]*$/" required>
+                    <span class="error" ng-show="frmAddPeople.txtPeopleName.$error.required">Name is required.</span>
+                    <span ng-show="frmAddPeople.txtPeopleName.$dirty && frmAddPeople.txtPeopleName.$invalid">
+                        <span class="error" ng-show="frmAddPeople.txtPeopleName.$error.pattern">Name must be alphabets only. </span>
+                        <span class="error" ng-show="frmAddPeople.txtPeopleName.$error.maxlength">Name must be less than 100 characters.</span>
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-2" for="txtMobile">Mobile:</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="txtMobile" name="txtPeopleMobile" placeholder="Enter Mobile number" ng-maxlength="20" ng-model="people.Mobile" />
+                    <span ng-show="frmAddPeople.txtPeopleMobile.$dirty && frmAddPeople.txtPeopleMobile.$invalid">
+                        <span class="error" ng-show="frmAddPeople.txtPeopleMobile.$error.maxlength">Mobile number must be less than 20 characters.</span>
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-2" for="txtEmail">Email:</label>
+                <div class="col-md-10">
+                    @*ng-pattern="^(?!.*[*|\x22:<>[\]{}`()';@&$])"*@
+                    <input type="text" id="txtEmail" name="txtPeopleEmail" class="form-control" placeholder="Enter Email Id" ng-model="people.Email" ng-maxlength="200" required />@@accenture.com
+                    <span class="error" ng-show="frmAddPeople.txtPeopleEmail.$error.required">Email is required.</span>
+                    <span ng-show="frmAddPeople.txtPeopleEmail.$dirty && frmAddPeople.txtPeopleEmail.$invalid">
+                        <span class="error" ng-show="frmAddPeople.txtPeopleEmail.$error.maxlength">Email must be less than 200 characters.</span>
+                        @*<span class="error" ng-show="frmAddPeople.txtPeopleEmail.$error.pattern">Email should not contain @@accenture.com. </span>*@
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-2" for="selectCareerLevel">CareerLevel:</label>
+                <div class="col-md-10">
+                    <select id="selectCareerLevel" name="selectPeopleCareerLevel" ng-model="people.selectedCareerLevel" ng-options="career.CareerLev for career in CareerLevel" class="form-control" required></select>
+                    <span class="error" ng-show="frmAddPeople.selectPeopleCareerLevel.$error.required">Career Level is required.</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-2" for="selectEmploymentType">Employment Type:</label>
+                <div class="col-md-10">
+                    <select id="selectEmploymentType" name="selectPeopleEmploymentType" ng-model="people.selectedEmploymentType" ng-options="employment.Type for employment in EmploymentType" class="form-control" required></select>
+                    <span class="error" ng-show="frmAddPeople.selectPeopleEmploymentType.$error.required">Employment Type is required.</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-2" for="selectDu">DU Name:</label>
+                <div class="col-md-10">
+                    <select id="selectEmploymentType" name="selectPeopleDu" ng-model="people.selectedDu" ng-options="du.DuName for du in Du" class="form-control" ng-change="GetProject(people.selectedDu)" required></select>
+                    <span class="error" ng-show="frmAddPeople.selectPeopleDu.$error.required">Du is required.</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-2" for="selectProject">Project Name:</label>
+                <div class="col-md-10">
+                    <select id="selectProject" name="selectPeopleProject" ng-model="people.selectedProject" ng-options="prj.ProjectName for prj in Project" class="form-control" ng-disabled="IsProjectDisabled" required></select>
+                    <span class="error" ng-show="frmAddPeople.selectPeopleProject.$error.required">Project Name is required.</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-2" for="selectSupervisor">Supervisor:</label>
+                <div class="col-md-10">
+                    <select id="selectSupervisor" name="selectPeopleSupervisor" ng-model="people.SupervisorName" ng-options="sv.EnterpriseId for sv in supervisor" class="form-control" ng-disabled="IsSupervisorDisabled" required></select>
+                    <span class="error" ng-show="frmAddPeople.selectPeopleSupervisor.$error.required">Supervisor Name is required.</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-2" for="chkIsActive">Is Active:</label>
+                <div class="col-md-10">
+                    <input type="checkbox" id="chkIsActive" ng-model="people.IsActive" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-2" for="dateAccentureDOJ">Accenture DOJ:</label>
+                <div class="col-md-10">
+                    <input type="date" id="dateAccentureDOJ" name="datePeopleAccentureDOJ" class="form-control" placeholder="Enter Supervisor Name" ng-model="people.AccentureDoj" required />
+                    <span class="error" ng-show="frmAddPeople.datePeopleAccentureDOJ.$error.required">Accenture DOJ is required.</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-2" for="dateProjectDOJ">ProjectDOJ:</label>
+                <div class="col-md-10">
+                    <input type="date" id="dateProjectDOJ" name="datePeopleProjectDOJ" class="form-control" placeholder="Enter Supervisor Name" ng-model="people.ProjectDoj" required />
+                    <span class="error" ng-show="frmAddPeople.datePeopleProjectDOJ.$error.required">Project DOJ is required.</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-success" ng-disabled="frmAddPeople.$invalid" ng-click="AddPeoples(people)">Save</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal" ng-click="ResetAddPeopleForm(people)">Close</button>
+        </div>
+    </form>
+</div>
